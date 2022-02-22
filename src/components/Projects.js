@@ -1,5 +1,5 @@
 import React from "react";
-import PodkeeperScreenshot from "./podkeeper-screenshot.png";
+import PodkeeperScreenshot from "./images/podkeeper-screenshot.png";
 
 function Projects() {
   return (

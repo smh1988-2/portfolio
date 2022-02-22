@@ -16,11 +16,6 @@
   cursor: pointer;
 }
 
-nav {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: space-evenly;
-}
 
 .hero-container {
   display: grid;
@@ -31,7 +26,7 @@ nav {
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
   line-height: 150%;
-  height: calc(100vh - 78px);
+  height: calc(100vh - 50px);
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -60,7 +55,6 @@ nav {
   box-sizing: border-box;
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
-  /* font-family: 'Roboto', sans-serif; */
   line-height: 150%;
   height: calc(100% - 78px);
   max-width: 50%;
@@ -68,22 +62,6 @@ nav {
   margin-right: auto;
   color: #fff;
 }
-
-.blog-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #565554;
-  padding: 75px 20px 75px 20px;
-  box-sizing: border-box;
-  font-family: "Questrial", sans-serif;
-  font-family: "Roboto Mono", monospace;
-  height: calc(100% - 78px);
-  max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  color: #fff;
-}
-
 
 @media screen and (max-width: 680px) {
   .hero-container {
@@ -93,6 +71,7 @@ nav {
 
   .projects-container {
     max-width: 100%;
+    height: calc(100vh - 50px);
   }
 
   .resume-container {
@@ -142,7 +121,7 @@ nav {
   overflow: hidden;
 }
 
-.topnav a {
+.topnav span {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -153,58 +132,10 @@ nav {
   font-weight: 500;
 }
 
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
 .resume-headers {
   padding: 0px;
   margin: 0px;
 }
-
-/* .hero-header-animated {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 50%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-} */
 
 .hero-header-animated {
   display: inline-block;

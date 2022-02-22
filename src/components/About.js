@@ -5,7 +5,7 @@ function About() {
 
     <div style={{backgroundColor:"#dacc3e"}}>
       <div className="hero-container">
-        <div class="animated animatedFadeInUp fadeInUp">
+        <div className="animated animatedFadeInUp fadeInUp">
           <h1 className="hero-header-animated">Hello, I'm Sean 👨🏻‍💻</h1>
           <p>
             I am a software engineer. I graduated Flatiron School in February
