@@ -28,6 +28,16 @@ function About() {
             Please check out my resume and projects and contact me if you want
             to start a conversation.
           </p>
+
+          <a href="https://github.com/smh1988-2">
+          <button className="about-button">GitHub</button>
+        </a>
+        <a href="https://www.linkedin.com/in/sean-hurley/">
+          <button className="about-button">LinkedIn</button>
+        </a>
+        <a href="mailto:seanmhurley1988@gmail.com">
+          <button className="about-button">Contact</button>
+        </a>
         </div>
       </div>
       </div>

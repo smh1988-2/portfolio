@@ -1,17 +1,18 @@
-.sub-button {
+.about-button {
   padding: 10px;
-  margin: 10px;
-  border: 1px solid #074f57;
-  background: #fff;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  background: #dacc3e;
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
-  color: #074f57;
+  
 }
 
-.sub-button:hover {
-  border: 1px solid #074f57;
-  background: #074f57;
-  color: #fff;
+.about-button:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #dacc3e;
   cursor: pointer;
 }
 
@@ -64,10 +65,26 @@ nav {
   color: #fff;
 }
 
+.blog-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #565554;
+  padding: 75px 20px 75px 20px;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  height: calc(100% - 78px);
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
 
 @media screen and (max-width: 680px) {
   .hero-container {
     max-width: 100%;
+    height: calc(100vh - 50px);
   }
 
   .projects-container {
@@ -126,15 +143,12 @@ nav {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  /* padding: 14px 16px; */
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 19px;
   font-weight: 500;
 }
 
-.topnav a:hover {
-  background-color: #dacc3e;
-}
 
 .topnav .icon {
   display: none;

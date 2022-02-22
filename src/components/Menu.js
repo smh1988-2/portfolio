@@ -29,9 +29,9 @@ function Menu() {
         <Link to="/resume">
         { id.pathname === "/resume" ? <a className="menu-button" style={{backgroundColor:"#08605f"}}>Resume</a> : <a className="menu-button">Resume</a>}
         </Link>
-        <Link to="/blog">
-        { id.pathname === "/blog" ? <a className="menu-button" style={{backgroundColor:"#dacc3e"}}>Blog</a> : <a className="menu-button">Blog</a>}
-        </Link>
+        {/* <Link to="/blog">
+        { id.pathname === "/blog" ? <a className="menu-button" style={{backgroundColor:"#565554"}}>Blog</a> : <a className="menu-button">Blog</a>}
+        </Link> */}
 
         <a
           href="javascript:void(0);"

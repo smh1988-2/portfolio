@@ -4,8 +4,8 @@ import BlogImage2 from "./sample-flow.png"
 
 function BlogHome() {
   return (
-    <div style={{ backgroundColor: "#08605F" }}>
-      <div className="resume-container">
+    <div style={{ backgroundColor: "#565554" }}>
+      <div className="blog-container">
         <div></div>
         <div className="project-center">
           <h3>
