@@ -30,6 +30,7 @@ nav {
   box-sizing: border-box;
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
+  line-height: 150%;
   height: calc(100vh - 78px);
   max-width: 50%;
   margin-left: auto;
@@ -44,6 +45,7 @@ nav {
   box-sizing: border-box;
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
+  line-height: 150%;
   height: 100%;
   max-width: 50%;
   margin-left: auto;
@@ -58,6 +60,8 @@ nav {
   box-sizing: border-box;
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
+  /* font-family: 'Roboto', sans-serif; */
+  line-height: 150%;
   height: calc(100% - 78px);
   max-width: 50%;
   margin-left: auto;
@@ -155,7 +159,7 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:last-child) {
+  .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
@@ -183,4 +187,95 @@ nav {
 .resume-headers {
   padding: 0px;
   margin: 0px;
+}
+
+/* .hero-header-animated {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+
+.hero-header-animated {
+  display: inline-block;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }

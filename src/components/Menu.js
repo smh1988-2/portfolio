@@ -20,7 +20,7 @@ function Menu() {
     <div>
       <div className="topnav" id="myTopnav">
       <Link to="/about">
-          { id.pathname === "/about" ? <a className="menu-button" style={{backgroundColor:"#dacc3e"}}>Sean Hurley</a> : <a className="menu-button">Sean Hurley</a>}
+          { id.pathname === "/about" ? <a style={{backgroundColor:"#dacc3e"}}>Sean Hurley</a> : <a className="menu-button">Sean Hurley</a>}
       </Link>
 
         <Link to="/projects">

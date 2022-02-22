@@ -5,7 +5,7 @@ function Projects() {
   return (
 
     <div style={{backgroundColor:"#D999B9"}}>
-    <div className="projects-container">
+    <div className="projects-container animated animatedFadeInUp fadeInUp">
       <div></div>
       <div className="project-center">
         <h1>Podkeeper</h1>

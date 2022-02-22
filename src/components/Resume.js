@@ -4,7 +4,7 @@ function Resume() {
   return (
 
     <div style={{backgroundColor:"#08605F"}}>
-    <div className="resume-container">
+    <div className="resume-container animated animatedFadeInUp fadeInUp">
       <div></div>
 
     <div className="project-center">

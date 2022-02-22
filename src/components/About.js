@@ -5,8 +5,8 @@ function About() {
 
     <div style={{backgroundColor:"#dacc3e"}}>
       <div className="hero-container">
-        <div>
-          <h1>Hello, I'm Sean 👨🏻‍💻</h1>
+        <div class="animated animatedFadeInUp fadeInUp">
+          <h1 className="hero-header-animated">Hello, I'm Sean 👨🏻‍💻</h1>
           <p>
             I am a software engineer. I graduated Flatiron School in February
             2022. I build fullstack web apps in <strong>React</strong> and{" "}
