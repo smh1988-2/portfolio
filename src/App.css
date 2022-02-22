@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Questrial", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 .about-button {
   padding: 10px;
   margin-right: 10px;
@@ -26,7 +35,7 @@
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
   line-height: 150%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 53px);
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -66,7 +75,7 @@
 @media screen and (max-width: 680px) {
   .hero-container {
     max-width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 53px);
   }
 
   .projects-container {
@@ -89,6 +98,11 @@
     width: 100%;
     max-width: 100% !important;
     height: auto;
+  }
+
+  .topnav {
+    margin: auto;
+    width: 100%!important;
   }
 }
 
@@ -119,6 +133,8 @@
 .topnav {
   background-color: #7fb7be;
   overflow: hidden;
+  margin: auto;
+  width: 50%;
 }
 
 .topnav span {
