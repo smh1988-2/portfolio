@@ -40,6 +40,18 @@ function Menu() {
             <span className="menu-button">Resume</span>
           )}
         </Link>
+        <Link to="/skills">
+          {id.pathname === "/skills" ? (
+            <span
+              className="menu-button"
+              style={{ backgroundColor: "#08605f" }}
+            >
+              Skills
+            </span>
+          ) : (
+            <span className="menu-button">Skills</span>
+          )}
+        </Link>
       </div>
     </div>
   );

@@ -2,8 +2,7 @@ import React from "react";
 
 function About() {
   return (
-
-    <div style={{backgroundColor:"#dacc3e"}}>
+    <div style={{ backgroundColor: "#dacc3e" }}>
       <div className="hero-container">
         <div className="animated animatedFadeInUp fadeInUp">
           <h1 className="hero-header-animated">Hello, I'm Sean 👨🏻‍💻</h1>
@@ -29,19 +28,65 @@ function About() {
             to start a conversation.
           </p>
 
-          <a href="https://github.com/smh1988-2">
-          <button className="about-button">GitHub</button>
-        </a>
-        <a href="https://www.linkedin.com/in/sean-hurley/">
-          <button className="about-button">LinkedIn</button>
-        </a>
-        <a href="mailto:seanmhurley1988@gmail.com">
-          <button className="about-button">Contact</button>
-        </a>
+    
+
+          <div class="row">
+            <div class="column">
+              <a href="https://github.com/smh1988-2">
+                <button className="about-button">
+                  &nbsp;&nbsp;GitHub&nbsp;&nbsp;
+                </button>
+              </a>
+              <a href="https://www.linkedin.com/in/sean-hurley/">
+                <button className="about-button">
+                  &nbsp;&nbsp;LinkedIn&nbsp;&nbsp;
+                </button>
+              </a>
+            </div>
+          
+
+          <div class="column">
+            <a href="https://medium.com/@seanmhurley1988">
+              <button className="about-button">
+                &nbsp;&nbsp;Medium&nbsp;&nbsp;
+              </button>
+            </a>
+            <a href="mailto:seanmhurley1988@gmail.com">
+              <button className="about-button">
+                &nbsp;&nbsp;Contact&nbsp;&nbsp;
+              </button>
+            </a>
+          </div>
+          </div>
+
+          {/* <div id="buttons-small">
+            &nbsp;&nbsp;
+            <a href="https://github.com/smh1988-2">
+              <button className="about-button">
+                &nbsp;&nbsp;GitHub&nbsp;&nbsp;
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/sean-hurley/">
+              <button className="about-button">
+                &nbsp;&nbsp;LinkedIn&nbsp;&nbsp;
+              </button>
+            </a>
+            <br />
+            &nbsp;&nbsp;
+            <a href="https://medium.com/@seanmhurley1988">
+              <button className="about-button">
+                &nbsp;&nbsp;Medium&nbsp;&nbsp;
+              </button>
+            </a>
+            <a href="mailto:seanmhurley1988@gmail.com">
+              <button className="about-button">
+                &nbsp;&nbsp;Contact&nbsp;&nbsp;
+              </button>
+            </a>
+          </div> */}
         </div>
       </div>
-      </div>
-
+    </div>
   );
 }
 
