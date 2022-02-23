@@ -28,20 +28,24 @@ body {
   color: #dacc3e;
 }
 
-#buttons {
-  float: left;
+.tech-icon {
+  font-size: 70px;
+  color: #000;
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
 }
 
-@media screen and (max-width: 680px) {
-  .column {
-    width: 100%;
-  }
+.tech-icon:hover {
+  transition: 0.70s;
+  color: #fff
 }
 
 .row {
   display: flex;
   text-align: center;
-  /* margin-top: 40px; */
 }
 
 .column {
@@ -57,7 +61,7 @@ body {
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
   line-height: 150%;
-  height: calc(100vh - 53px);
+  height: 100%!important;
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -105,6 +109,11 @@ body {
     height: calc(100vh - 50px);
   }
 
+  .skills-container {
+    max-width: 100%;
+    height: calc(100vh - 50px);
+  }
+
   .resume-container {
     max-width: 100%;
   }
@@ -125,6 +134,10 @@ body {
   .topnav {
     margin: auto;
     width: 100% !important;
+  }
+
+  .column {
+    width: 100%;
   }
 }
 
@@ -168,6 +181,18 @@ body {
   text-decoration: none;
   font-size: 19px;
   font-weight: 500;
+}
+
+#projects-link:hover {
+  background-color: #d999b9;
+}
+
+#resume-link:hover {
+  background-color: #08605f;
+}
+
+#about-link:hover {
+  background-color: #dacc3e;
 }
 
 .resume-headers {

@@ -1,11 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+
+import {
+  DiJavascript1,
+  DiReact,
+  DiRuby,
+  DiHtml5,
+  DiCss3,
+  DiGitBranch,
+  DiPostgresql,
+} from "react-icons/di";
+import { SiRubyonrails } from "react-icons/si";
+import { HiRefresh } from "react-icons/hi";
 
 function About() {
+  const [refreshHeader, setRefreshHeader] = useState(0);
+  const headerOptions = [". I love coding 👨🏻‍💻", ". I like plants 🍀", ". I have pride 🏳️‍🌈", ". I keep learning 🤷🏻‍♂️", ". I travel 🇮🇪"];
+
+  function changeHeaderText() {
+    if (refreshHeader <= 3) {
+      setRefreshHeader(refreshHeader + 1);
+    } else {
+      setRefreshHeader(0);
+    }
+  }
+
   return (
     <div style={{ backgroundColor: "#dacc3e" }}>
       <div className="hero-container">
         <div className="animated animatedFadeInUp fadeInUp">
-          <h1 className="hero-header-animated">Hello, I'm Sean 👨🏻‍💻</h1>
+          <h1 className="hero-header-animated">
+            Hello, I'm Sean
+            {headerOptions[refreshHeader]}&nbsp;&nbsp;&nbsp;
+            
+          </h1>
+<br />
+          <span style={{ color: "#fff", fontSize:"40px" }}>
+              <HiRefresh onClick={changeHeaderText} />
+            </span>
+
           <p>
             I am a software engineer. I graduated Flatiron School in February
             2022. I build fullstack web apps in <strong>React</strong> and{" "}
@@ -28,10 +60,60 @@ function About() {
             to start a conversation.
           </p>
 
-    
+          <div className="row">
+            <div className="column">
+              <span className="tech-icon">
+                <DiJavascript1 />
+              </span>
+            </div>
+            <div className="column">
+              <span className="tech-icon">
+                <DiReact />
+              </span>
+            </div>
+          </div>
 
-          <div class="row">
-            <div class="column">
+          <div className="row">
+            <div className="column">
+              <span className="tech-icon">
+                <DiRuby />
+              </span>
+            </div>
+            <div className="column">
+              <span className="tech-icon">
+                <SiRubyonrails />
+              </span>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="column">
+              <span className="tech-icon">
+                <DiHtml5 />
+              </span>
+            </div>
+            <div className="column">
+              <span className="tech-icon">
+                <DiCss3 />
+              </span>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="column">
+              <span className="tech-icon">
+                <DiGitBranch />
+              </span>
+            </div>
+            <div className="column">
+              <span className="tech-icon">
+                <DiPostgresql />
+              </span>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="column">
               <a href="https://github.com/smh1988-2">
                 <button className="about-button">
                   &nbsp;&nbsp;GitHub&nbsp;&nbsp;
@@ -43,20 +125,19 @@ function About() {
                 </button>
               </a>
             </div>
-          
 
-          <div class="column">
-            <a href="https://medium.com/@seanmhurley1988">
-              <button className="about-button">
-                &nbsp;&nbsp;Medium&nbsp;&nbsp;
-              </button>
-            </a>
-            <a href="mailto:seanmhurley1988@gmail.com">
-              <button className="about-button">
-                &nbsp;&nbsp;Contact&nbsp;&nbsp;
-              </button>
-            </a>
-          </div>
+            <div className="column">
+              <a href="https://medium.com/@seanmhurley1988">
+                <button className="about-button">
+                  &nbsp;&nbsp;Medium&nbsp;&nbsp;
+                </button>
+              </a>
+              <a href="mailto:seanmhurley1988@gmail.com">
+                <button className="about-button">
+                  &nbsp;&nbsp;Contact&nbsp;&nbsp;
+                </button>
+              </a>
+            </div>
           </div>
 
           {/* <div id="buttons-small">
