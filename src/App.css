@@ -71,12 +71,12 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #d999b9;
-  padding: 75px 20px 75px 20px;
+  padding: 75px 20px 0px 20px;
   box-sizing: border-box;
   font-family: "Questrial", sans-serif;
   font-family: "Roboto Mono", monospace;
   line-height: 150%;
-  height: 100%;
+  height: 100%!important;
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
