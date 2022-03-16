@@ -14,7 +14,7 @@ import { HiRefresh } from "react-icons/hi";
 
 function About() {
   const [refreshHeader, setRefreshHeader] = useState(0);
-  const headerOptions = [". I love coding 👨🏻‍💻", ". I like plants 🍀", ". I have pride 🏳️‍🌈", ". I keep learning 🤷🏻‍♂️", ". I travel 🇮🇪"];
+  const headerOptions = [". I love coding 👨🏻‍💻", ". I like plants 🍀", ". I have pride 🏳️‍🌈", ". I ❤️ learning", ". I travel 🇮🇪"];
 
   function changeHeaderText() {
     if (refreshHeader <= 3) {
@@ -41,7 +41,7 @@ function About() {
           <p>
             I am a software engineer. I graduated Flatiron School in February
             2022. I build fullstack web apps in <strong>React</strong> and{" "}
-            <strong>Ruby on Rails</strong>.
+            <strong>Ruby on Rails</strong> (and bunch of other stuff).
           </p>
           <p>
             I enjoy solving difficult problems (in teams and solo) and learning
@@ -139,32 +139,6 @@ function About() {
               </a>
             </div>
           </div>
-
-          {/* <div id="buttons-small">
-            &nbsp;&nbsp;
-            <a href="https://github.com/smh1988-2">
-              <button className="about-button">
-                &nbsp;&nbsp;GitHub&nbsp;&nbsp;
-              </button>
-            </a>
-            <a href="https://www.linkedin.com/in/sean-hurley/">
-              <button className="about-button">
-                &nbsp;&nbsp;LinkedIn&nbsp;&nbsp;
-              </button>
-            </a>
-            <br />
-            &nbsp;&nbsp;
-            <a href="https://medium.com/@seanmhurley1988">
-              <button className="about-button">
-                &nbsp;&nbsp;Medium&nbsp;&nbsp;
-              </button>
-            </a>
-            <a href="mailto:seanmhurley1988@gmail.com">
-              <button className="about-button">
-                &nbsp;&nbsp;Contact&nbsp;&nbsp;
-              </button>
-            </a>
-          </div> */}
         </div>
       </div>
     </div>
