@@ -63,11 +63,11 @@ function Projects() {
               <a href="https://github.com/smh1988-2/pokemon-party-builder">
                 very first coding project
               </a>
-              . The original was built with vanilla JavaScript, HTML, CSS and
+              . The original was built with vanilla JavaScript, HTML, CSS, and
               Bootstrap. It had a local backend using json-server.
             </p>
 
-            <p>Users can search for Pokemon, see their types and add Pokemon to their team. They can also see the specific strengths and weakness of the Pokemon on their team.</p>
+            <p>Users can search for Pokemon, see their types, and add Pokemon to their team. They can also see the specific strengths and weakness of the Pokemon on their team.</p>
 
             <p>
               This version uses a React frontend, with Redux for state
