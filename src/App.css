@@ -142,20 +142,20 @@ h1, p {
   text-align: left;
   position: fixed;
   top: 0;
-  width: 100%;
+  /* width: 100%; */
   z-index: 5;
   font-size: 10vw;
 }
 
 .logo-bottom-right {
   position: absolute;
-  mix-blend-mode: darken;
+  mix-blend-mode: color-dodge;
   left: -30px;
   text-align: right;
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 1;
   font-size: 10vw;
 }
 
