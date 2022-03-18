@@ -8,7 +8,7 @@ function Links() {
 
             <a href="https://github.com/smh1988-2">
               <button className="link-button">
-              &nbsp;&nbsp;GiftHub&nbsp;&nbsp;
+              GitHub
               </button>
             </a>
             <a href="https://www.linkedin.com/in/sean-hurley/">
@@ -19,7 +19,7 @@ function Links() {
 
             <a href="https://medium.com/@seanmhurley1988">
               <button className="link-button">
-              &nbsp;&nbsp;Medium&nbsp;&nbsp;
+              Medium
               </button>
             </a>
             <a href="mailto:seanmhurley1988@gmail.com">

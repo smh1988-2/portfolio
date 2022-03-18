@@ -38,6 +38,12 @@ h1, p {
   text-align: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  h1 {
+    line-height: 1.2;
+  }
+}
+
 /* HERO */
 
 .hero-background {
@@ -138,7 +144,7 @@ h1, p {
   top: 0;
   width: 100%;
   z-index: 5;
-  font-size: 4vw;
+  font-size: 10vw;
 }
 
 .logo-bottom-right {
@@ -150,17 +156,17 @@ h1, p {
   bottom: 0;
   width: 100%;
   z-index: 5;
-  font-size: 4vw;
+  font-size: 10vw;
 }
 
 
 /* SKILLS -- RENAMEEE!!!! */
 
-.about {
+.skills {
   background-color: #d999b9;
 }
 
-.about-text {
+.skills-text {
   width: 50%;
   position: absolute;
   top: 50%;
@@ -171,12 +177,12 @@ h1, p {
   color: #fff;
 }
 
-#about-icons {
+#skills-icons {
   padding-top: 25px;
   animation: gradient 15s ease infinite;
 }
 
-#about-header {
+#skills-header {
   background-image: linear-gradient(45deg, #7bae7f, #9d44b5);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -197,6 +203,28 @@ h1, p {
   font-size: 6vw;
 }
 
+@media only screen and (max-width: 1024px) {
+  .skills-text {
+    font-size: 4vw;
+    width: 80%;
+  }
+
+  .tech-icon {
+    font-size: 10vw;
+    animation-name: none;
+  }
+
+  @keyframes side-to-side {
+    0% {
+      left: 40%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+}
+
 @keyframes side-to-side {
   0% {
     left: -130%;
@@ -212,10 +240,8 @@ h1, p {
   padding-left: 25%;
 }
 
-
-
 .about-me-text {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -224,9 +250,17 @@ h1, p {
   font-family: 'Roboto Serif', serif;
   color: #B1436C;
   padding: 60px;
+}
 
-  /* border: 2px solid black */
+@media only screen and (max-width: 1024px) {
+  .about-me-text {
+    padding: 110px;
+    font-size: 15px;
+  }
 
+  #about-box {
+    padding: 50px;
+  }
 }
 
 #about-box {
@@ -289,7 +323,6 @@ h1, p {
 
 .links-text {
   text-align: center;
-
   width: 50%;
   position: absolute;
   top: 50%;
@@ -322,6 +355,27 @@ h1, p {
   color: #ebebeb;
 }
 
+@media only screen and (max-width: 1024px) {
+  .links-text {
+    font-size: 20px;
+    width: 80%;
+    
+  }
+
+  h1 {
+    line-height: 1;
+    padding-bottom: 15px;
+  }
+
+  .link-button {
+    width: 16vh;
+    padding: 2;
+        font-size: 1.25rem;
+    margin:7px;
+  }
+
+}
+
 
 /* Resume */
 
@@ -331,7 +385,7 @@ h1, p {
 }
 
 .resume-text {
-  width: 50%;
+  width: 80%;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -377,4 +431,37 @@ h1, p {
   background: #9d44b5;
   border-color: #9d44b5;
   color: #ebebeb;
+}
+
+@media only screen and (max-width: 1024px) {
+  .resume-summary-button{
+    font-size: 25px;
+    padding-top:20px;
+  }
+
+  .resume-text {
+    font-size: 4vw;
+  }
+
+  .resume-button-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .resume-button {
+    width: 45vh;
+    background: transparent;
+    padding: 15px 25px 15px 25px;
+    border: 2px solid #9d44b5;
+    color: #9d44b5;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin:20px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+  }
+
 }
