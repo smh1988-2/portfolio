@@ -1,60 +1,33 @@
-import React, { useState } from "react";
-
-import {
-  DiJavascript1,
-  DiReact,
-  DiRuby,
-  DiHtml5,
-  DiCss3,
-  DiGitBranch,
-  DiPostgresql,
-} from "react-icons/di";
-import { SiRubyonrails } from "react-icons/si";
-import { HiRefresh } from "react-icons/hi";
+import React from "react";
 
 function About() {
-  const [refreshHeader, setRefreshHeader] = useState(0);
-  const headerOptions = [
-    ". I love coding 👨🏻‍💻",
-    ". I like plants 🍀",
-    ". I have pride 🏳️‍🌈",
-    ". I ❤️ learning",
-    ". I travel 🇮🇪",
-  ];
-
-  function changeHeaderText() {
-    if (refreshHeader <= 3) {
-      setRefreshHeader(refreshHeader + 1);
-    } else {
-      setRefreshHeader(0);
-    }
-  }
 
   return (
-    <div style={{ backgroundColor: "#dacc3e" }} className="full-height about-me-container">
+    <div style={{ backgroundColor: "#EFE9A9" }} className="full-height about-me-container" id="about">
       <div className="about-me-text">
-
-          <p>
-            I am a software engineer. I graduated Flatiron School in February
-            2022. I build fullstack web apps in <strong>React</strong> and&nbsp;
-            <strong>Ruby on Rails</strong> (and bunch of other stuff).
+      <div id="about-box"><div id="box"></div><p>
+            I am a software engineer who builds fullstack web apps.
           </p>
+          <br />
           <p>
             I enjoy solving difficult problems (in teams and solo) and learning
             new tools and technologies.
           </p>
+          <br />
           <p>
             Before my foray into software engineering, I spent 8 years in
             digital marketing.
           </p>
+          <br />
           <p>
             Originally from Ireland, I now live in northern California with my
             husband, two cats, and innumerable plants.
           </p>
+          <br />
           <p>
             Please check out my resume and projects and contact me if you want
             to start a conversation.
-          </p>
+          </p></div>
       </div>
     </div>
   );

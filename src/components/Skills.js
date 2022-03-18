@@ -13,7 +13,7 @@ import { SiRubyonrails } from "react-icons/si";
 
 function Skills() {
   return (
-    <div className="full-height about" id="about">
+    <div className="full-height about">
       <div className="about-text">
         <h1 id="about-header">This is what I use to make stuff.</h1>
 

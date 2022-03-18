@@ -3,13 +3,12 @@ import React from "react";
 function Links() {
   return (
     <div className="half-height">
-      <div>
+      <div className="links-text">
         <h1>Find me other places.</h1>
-        <div className="row">
-          <div className="column">
+
             <a href="https://github.com/smh1988-2">
               <button className="link-button">
-                GitHub
+              &nbsp;&nbsp;GiftHub&nbsp;&nbsp;
               </button>
             </a>
             <a href="https://www.linkedin.com/in/sean-hurley/">
@@ -17,12 +16,10 @@ function Links() {
                 LinkedIn
               </button>
             </a>
-          </div>
 
-          <div className="column">
             <a href="https://medium.com/@seanmhurley1988">
               <button className="link-button">
-                Medium
+              &nbsp;&nbsp;Medium&nbsp;&nbsp;
               </button>
             </a>
             <a href="mailto:seanmhurley1988@gmail.com">
@@ -30,8 +27,6 @@ function Links() {
                 Contact
               </button>
             </a>
-          </div>
-        </div>
       </div>
     </div>
   );
