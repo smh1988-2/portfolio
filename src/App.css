@@ -31,7 +31,7 @@ p {
 }
 
 .half-height {
-  height: 50vh !important;
+  height: 50vh;
   position: relative;
 }
 
@@ -168,14 +168,12 @@ p {
 }
 
 .logo-bottom-right {
-  position: absolute;
+  position: relative;
   mix-blend-mode: color-dodge;
   left: -30px;
   text-align: right;
-  position: fixed;
-  bottom: 0;
+  top: 100%;
   width: 100%;
-  z-index: 1;
   font-size: 10vw;
 }
 
@@ -192,7 +190,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Roboto Mono", monospace;
-  font-size: 2vw;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -216,10 +214,18 @@ p {
   padding: 20px;
   position: relative;
   animation-name: side-to-side;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
   font-size: 6vw;
+}
+
+@keyframes side-to-side {
+  0% {
+    left: -130%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -240,15 +246,6 @@ p {
     100% {
       left: 100%;
     }
-  }
-}
-
-@keyframes side-to-side {
-  0% {
-    left: -130%;
-  }
-  100% {
-    left: 150%;
   }
 }
 
@@ -331,8 +328,8 @@ p {
 #about-box:hover::after,
 #about-box:hover #box::before,
 #about-box:hover #box::after {
-  width: calc(110% / 2);
-  height: calc(110% / 2);
+  width: calc(90% / 2);
+  height: calc(90% / 2);
 }
 
 /* PROJECTS */
@@ -351,6 +348,13 @@ p {
   font-size: 4rem;
   font-family: "Roboto Mono", monospace;
   margin: 2rem 0rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project > h1 {
+    font-size: 2rem;
+    margin: 0rem 0rem;
+  }
 }
 
 .project {
@@ -380,10 +384,11 @@ p {
   color: #ebebeb;
   font-size: 1.25rem;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   margin: 1rem;
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 1s;
   transition-timing-function: linear;
 }
 
@@ -393,6 +398,98 @@ p {
   background: #1982c4;
   border-color: #ebebeb;
   color: #ebebeb;
+}
+
+/* Resume */
+
+.resume {
+  background-color: #7bae7f;
+  text-align: center;
+}
+
+.resume-text {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  color: #ebebeb;
+}
+
+.resume-bullet-point {
+  font-size: 1rem;
+}
+
+.resume-button-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume-button {
+  width: 30vh;
+  background: transparent;
+  padding: 15px 25px 15px 25px;
+  border: 2px solid #9d44b5;
+  color: #9d44b5;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.resume-summary-button {
+  background: transparent;
+  border: none;
+  color: #9d44b5;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.resume-button:hover,
+.resume-button:focus {
+  box-shadow: inset 14em 0 0 0 #9d44b5;
+  background: #9d44b5;
+  border-color: #9d44b5;
+  color: #ebebeb;
+}
+
+@media only screen and (max-width: 1024px) {
+  .resume-summary-button {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  .resume-text {
+    font-size: 1em;
+  }
+
+  .resume-button-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .resume-button {
+    width: 45vh;
+    background: transparent;
+    padding: 15px 25px 15px 25px;
+    border: 2px solid #9d44b5;
+    color: #9d44b5;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
 }
 
 /* LINKS */
@@ -419,7 +516,7 @@ p {
   cursor: pointer;
   margin: 20px;
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 1s;
   transition-timing-function: linear;
 }
 
@@ -447,93 +544,5 @@ p {
     padding: 2;
     font-size: 1.25rem;
     margin: 7px;
-  }
-}
-
-/* Resume */
-
-.resume {
-  background-color: #7bae7f;
-  text-align: center;
-}
-
-.resume-text {
-  width: 80%;
-  height: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.75vw;
-  color: #ebebeb;
-}
-
-.resume-button-container {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.resume-button {
-  width: 30vh;
-  background: transparent;
-  padding: 15px 25px 15px 25px;
-  border: 2px solid #9d44b5;
-  color: #9d44b5;
-  font-size: 1.25rem;
-  cursor: pointer;
-  margin: 20px;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-}
-
-.resume-summary-button {
-  background: transparent;
-  border: none;
-  color: #9d44b5;
-  font-size: 3rem;
-  cursor: pointer;
-}
-
-.resume-button:hover,
-.resume-button:focus {
-  box-shadow: inset 14em 0 0 0 #9d44b5;
-  background: #9d44b5;
-  border-color: #9d44b5;
-  color: #ebebeb;
-}
-
-@media only screen and (max-width: 1024px) {
-  .resume-summary-button {
-    font-size: 25px;
-    padding-top: 20px;
-  }
-
-  .resume-text {
-    font-size: 4vw;
-  }
-
-  .resume-button-container {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .resume-button {
-    width: 45vh;
-    background: transparent;
-    padding: 15px 25px 15px 25px;
-    border: 2px solid #9d44b5;
-    color: #9d44b5;
-    font-size: 1.25rem;
-    cursor: pointer;
-    margin: 20px;
-    transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
   }
 }

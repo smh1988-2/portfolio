@@ -6,7 +6,7 @@ function Projects() {
       {/* animated animatedFadeInUp fadeInUp"> */}
 
       <div className="project">
-        <h1>Podkeeper</h1>
+        <h1>Podkeeper.</h1>
         <p>
           A social podcast app. Users can find podcasts and listen to episodes.
           They can rate podcasts and episodes. You can search and follow other
@@ -50,7 +50,7 @@ function Projects() {
       </div>
 
       <div className="project">
-        <h1>Poké Team Builder v2</h1>
+        <h1>Poké Team Builder v2.</h1>
 
         <div>
           <p>
@@ -58,15 +58,8 @@ function Projects() {
             their team. They can also see the specific strengths and weakness of
             the Pokemon on their team.
           </p>
-
           <p>
-            This is an updated version of my very first coding project. The
-            original was built with vanilla JavaScript, HTML, CSS, and
-            Bootstrap. It had a local backend using json-server.
-          </p>
-
-          <p>
-            This version uses a React frontend, with Redux for state management.
+            It uses a React frontend, with Redux for state management.
             It is styled with Bootstrap and customized with SCSS/SASS. It is
             deployed on AWS.
           </p>
@@ -92,7 +85,40 @@ function Projects() {
       </div>
 
       <div className="project">
-        <h1>Cocktailor</h1>
+        <h1>
+          Schemeideberg's Pretzels.
+        </h1>
+
+        <div>
+          <p>
+            This is a landing page for a fake pretzel comapny. I wanted to build a simple landing page with vanilla (and semantic) HTML/CSS and no Javascript. The landing page is mobile-first and completely responsive, built with flexbox. 
+          </p>
+
+          <p>The page is currently hosted on GitHub Pages.</p>
+
+          <ul className="project-tech-list">
+            <li>Frontend: HTML/CSS</li>
+          </ul>
+          <div className="project-button-container">
+            <a
+              href="https://smh1988-2.github.io/schmeideberg-pretzels/"
+              className="project-button"
+            >
+              Visit
+            </a>
+            <a
+              href="https://github.com/smh1988-2/schmeideberg-pretzels"
+              className="project-button"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="project">
+        <h1>Cocktailor.</h1>
         <div>
           <p>
             We used React and Ruby on Rails to create a cocktail recommendation

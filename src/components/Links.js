@@ -1,4 +1,6 @@
 import React from "react";
+import { RiCodeSSlashFill } from "react-icons/ri";
+
 
 function Links() {
   return (
@@ -27,6 +29,10 @@ function Links() {
                 Contact
               </button>
             </a>
+      </div>
+
+      <div className="logo-bottom-right">
+      <a href="https://github.com/smh1988-2"><RiCodeSSlashFill /></a>
       </div>
     </div>
   );

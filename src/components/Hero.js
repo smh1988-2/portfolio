@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
-import { RiPlayMiniLine, RiPauseMiniLine, RiCodeFill, RiCodeSSlashFill } from "react-icons/ri";
+import { RiPlayMiniLine, RiPauseMiniLine, RiCodeFill } from "react-icons/ri";
 
 function Hero() {
   const stringSplitter = (string) => {
@@ -29,9 +29,7 @@ function Hero() {
       <a href="https://github.com/smh1988-2"><RiCodeFill /></a>
       </div>
 
-      <div className="logo-bottom-right">
-      <a href="https://github.com/smh1988-2"><RiCodeSSlashFill /></a>
-      </div>
+      
 
       <div className="hero-text">
         <div class="grid-container">

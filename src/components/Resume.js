@@ -47,7 +47,7 @@ function Resume() {
           <button className="resume-summary-button" onClick={handleResumeTextForward}>&rarr;</button>
         </div>
 <br />
-        <p>{resumeText[text]}</p>
+        <p className="resume-bullet-point">{resumeText[text]}</p>
 
         <div className="resume-button-container">
           <a href="/sean-hurley-resume.pdf">
