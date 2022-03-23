@@ -3,15 +3,28 @@ import React from "react";
 function Projects() {
   return (
     <div className="projects-container">
-      {/* animated animatedFadeInUp fadeInUp"> */}
-
       <div className="project">
         <h1>Podkeeper.</h1>
         <p>
-          A social podcast app. Users can find podcasts and listen to episodes.
-          They can rate podcasts and episodes. You can search and follow other
-          users and see their podcast activity. The app also tracks podcast
-          listening metrics.
+          A social podcast app. Users can sign up and find the podcasts they
+          like, subscribe, and listen to episodes. They can rate podcasts and
+          individual episodes.
+        </p>
+        <p>
+          Users have a timeline of all their podcast activity, including what
+          episodes they've listened to and when, as well as any subscriptions or
+          ratings.
+        </p>
+        <p>
+          Users can also follow other users. When you follow other users you can
+          see their podcast activity in your timeline, including ratings and
+          listening activity.
+        </p>
+
+        <p>
+          The app also tracks podcast listening metrics. You can see how many
+          podcasts you're subscribed to, how many episodes you've listened to
+          and how many hours of podcasts you've listened to.
         </p>
 
         <ul className="project-tech-list">
@@ -59,9 +72,9 @@ function Projects() {
             the Pokemon on their team.
           </p>
           <p>
-            It uses a React frontend, with Redux for state management.
-            It is styled with Bootstrap and customized with SCSS/SASS. It is
-            deployed on AWS.
+            It uses a React frontend, with Redux for state management. It is
+            styled with Bootstrap and customized with SCSS/SASS. It is deployed
+            on AWS.
           </p>
 
           <ul className="project-tech-list">
@@ -85,13 +98,14 @@ function Projects() {
       </div>
 
       <div className="project">
-        <h1>
-          Schemeideberg's Pretzels.
-        </h1>
+        <h1>Schemeideberg's Pretzels.</h1>
 
         <div>
           <p>
-            This is a landing page for a fake pretzel comapny. I wanted to build a simple landing page with vanilla (and semantic) HTML/CSS and no Javascript. The landing page is mobile-first and completely responsive, built with flexbox. 
+            This is a landing page for a fake pretzel company. I wanted to build
+            a simple landing page with vanilla (and semantic) HTML/CSS and no
+            Javascript. The landing page is mobile-first and completely
+            responsive, built with flexbox.
           </p>
 
           <p>The page is currently hosted on GitHub Pages.</p>
@@ -116,7 +130,6 @@ function Projects() {
         </div>
       </div>
 
-
       <div className="project">
         <h1>Cocktailor.</h1>
         <div>
@@ -138,7 +151,9 @@ function Projects() {
               GitHub
             </a>
           </div>
-          <br /><br /><br />
+          <br />
+          <br />
+          <br />
         </div>
       </div>
     </div>
