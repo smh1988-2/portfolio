@@ -1,7 +1,6 @@
 import React from "react";
 import { RiCodeSSlashFill } from "react-icons/ri";
 
-
 function Links() {
   return (
     <div className="half-height">
