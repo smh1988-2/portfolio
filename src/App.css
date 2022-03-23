@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto+Serif&display=swap");
 
 /* GLOBAL STYLES */
 html,
@@ -16,9 +16,10 @@ body > #root > div {
   height: 100vh;
 }
 
-h1, p {
+h1,
+p {
   margin-block-start: 0em;
-  margin-block-end: 0em;
+  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.6;
@@ -90,25 +91,46 @@ h1, p {
   color: #ebebeb;
   font-size: 2.25rem;
   cursor: pointer;
-  margin:20px;
+  margin: 20px;
   animation: shake 2s;
   animation-iteration-count: 5;
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px); }
-  10% { transform: translate(1px, 3px); }
-  20% { transform: translate(1px, 0px); }
-  30% { transform: translate(1px, 2px); }
-  40% { transform: translate(1px, -1px); }
-  50% { transform: translate(1px, 2px); }
-  60% { transform: translate(1px, 1px); }
-  70% { transform: translate(1px, 0px); }
-  80% { transform: translate(1px, -1px); }
-  90% { transform: translate(1px, 2px); }
-  100% { transform: translate(1px, -1px); }
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(1px, 3px);
+  }
+  20% {
+    transform: translate(1px, 0px);
+  }
+  30% {
+    transform: translate(1px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(1px, 2px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  70% {
+    transform: translate(1px, 0px);
+  }
+  80% {
+    transform: translate(1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -1px);
+  }
 }
-
 
 /* MENU */
 
@@ -135,14 +157,12 @@ h1, p {
 }
 
 .logo {
-  /* position: absolute; */
   mix-blend-mode: color-dodge;
   left: 0px;
   padding: 10px;
   text-align: left;
   position: fixed;
   top: 0;
-  /* width: 100%; */
   z-index: 5;
   font-size: 10vw;
 }
@@ -159,8 +179,7 @@ h1, p {
   font-size: 10vw;
 }
 
-
-/* SKILLS -- RENAMEEE!!!! */
+/* SKILLS */
 
 .skills {
   background-color: #d999b9;
@@ -222,7 +241,6 @@ h1, p {
       left: 100%;
     }
   }
-
 }
 
 @keyframes side-to-side {
@@ -247,8 +265,8 @@ h1, p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Roboto Serif', serif;
-  color: #B1436C;
+  font-family: "Roboto Serif", serif;
+  color: #b1436c;
   padding: 60px;
 }
 
@@ -264,60 +282,118 @@ h1, p {
 }
 
 #about-box {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
 }
 
 #about-box::before,
 #about-box::after,
 #box::before,
 #box::after {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	background: transparent;
-	transition: 1s;
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  transition: 1s;
 }
 
 #about-box::before {
-	top: -2px;
-	left: -2px;
-	border-top: 1px solid #B1436C;
-	border-left: 1px solid #B1436C;
+  top: -2px;
+  left: -2px;
+  border-top: 1px solid #b1436c;
+  border-left: 1px solid #b1436c;
 }
 #about-box::after {
-	top: -2px;
-	right: -2px;
-	border-top: 1px solid #B1436C;
-	border-right: 1px solid #B1436C;
+  top: -2px;
+  right: -2px;
+  border-top: 1px solid #b1436c;
+  border-right: 1px solid #b1436c;
 }
 
 #box::before {
-	bottom: -2px;
-	left: -2px;
-	border-bottom: 1px solid #B1436C;
-	border-left: 1px solid #B1436C;
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 1px solid #b1436c;
+  border-left: 1px solid #b1436c;
 }
 #box::after {
-	bottom: -2px;
-	right: -2px;
-	border-bottom: 1px solid #B1436C;
-	border-right: 1px solid #B1436C;
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 1px solid #b1436c;
+  border-right: 1px solid #b1436c;
 }
-
 
 #about-box:hover::before,
 #about-box:hover::after,
 #about-box:hover #box::before,
-#about-box:hover #box::after  {
-	width: calc( 110% / 2);
-	height: calc( 110% / 2);
+#about-box:hover #box::after {
+  width: calc(110% / 2);
+  height: calc(110% / 2);
 }
 
+/* PROJECTS */
+
+.projects-container {
+  background: #607196;
+  font-family: "Roboto Serif", serif;
+  color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project > h1 {
+  font-size: 4rem;
+  font-family: "Roboto Mono", monospace;
+  margin: 2rem 0rem;
+}
+
+.project {
+  width: 70%;
+  flex-flow: row wrap;
+  padding: 3rem 0rem 1rem 0rem;
+}
+
+.project-tech-list {
+  line-height: 2;
+}
+
+.project-button-container {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-button {
+  width: 30vh;
+  background: transparent;
+  padding: 1rem 2rem;
+  border: 2px solid #ebebeb;
+  color: #ebebeb;
+  font-size: 1.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1rem;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+.project-button:hover,
+.project-button:focus {
+  box-shadow: inset 14em 0 0 0 #1982c4;
+  background: #1982c4;
+  border-color: #ebebeb;
+  color: #ebebeb;
+}
 
 /* LINKS */
 
@@ -330,18 +406,18 @@ h1, p {
   transform: translate(-50%, -50%);
   font-family: "Roboto Mono", monospace;
   font-size: 1.75vw;
-  color: #B1436C;
+  color: #b1436c;
 }
 
 .link-button {
   width: 30vh;
   background: transparent;
   padding: 15px 25px 15px 25px;
-  border: 2px solid #B1436C;
-  color: #B1436C;
+  border: 2px solid #b1436c;
+  color: #b1436c;
   font-size: 1.25rem;
   cursor: pointer;
-  margin:20px;
+  margin: 20px;
   transition-property: all;
   transition-duration: 2s;
   transition-timing-function: linear;
@@ -349,9 +425,9 @@ h1, p {
 
 .link-button:hover,
 .link-button:focus {
-  box-shadow: inset 14em 0 0 0 #B1436C;
-  background: #B1436C;
-  border-color: #B1436C;
+  box-shadow: inset 14em 0 0 0 #b1436c;
+  background: #b1436c;
+  border-color: #b1436c;
   color: #ebebeb;
 }
 
@@ -359,7 +435,6 @@ h1, p {
   .links-text {
     font-size: 20px;
     width: 80%;
-    
   }
 
   h1 {
@@ -370,12 +445,10 @@ h1, p {
   .link-button {
     width: 16vh;
     padding: 2;
-        font-size: 1.25rem;
-    margin:7px;
+    font-size: 1.25rem;
+    margin: 7px;
   }
-
 }
-
 
 /* Resume */
 
@@ -411,13 +484,13 @@ h1, p {
   color: #9d44b5;
   font-size: 1.25rem;
   cursor: pointer;
-  margin:20px;
+  margin: 20px;
   transition-property: all;
   transition-duration: 2s;
   transition-timing-function: linear;
 }
 
-.resume-summary-button{
+.resume-summary-button {
   background: transparent;
   border: none;
   color: #9d44b5;
@@ -434,9 +507,9 @@ h1, p {
 }
 
 @media only screen and (max-width: 1024px) {
-  .resume-summary-button{
+  .resume-summary-button {
     font-size: 25px;
-    padding-top:20px;
+    padding-top: 20px;
   }
 
   .resume-text {
@@ -458,10 +531,9 @@ h1, p {
     color: #9d44b5;
     font-size: 1.25rem;
     cursor: pointer;
-    margin:20px;
+    margin: 20px;
     transition-property: all;
     transition-duration: 2s;
     transition-timing-function: linear;
   }
-
 }
