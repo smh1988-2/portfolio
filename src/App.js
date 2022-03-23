@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Links from "./components/Links";
 import Resume from "./components/Resume";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -13,8 +14,9 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Links />
+      <Projects />
       <Resume />
+      <Links />
     </div>
   );
 }
