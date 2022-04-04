@@ -97,6 +97,57 @@ function Projects() {
         </div>
       </div>
 
+
+
+
+
+
+
+      <div className="project">
+        <h1>Sean Codes</h1>
+
+        <div>
+          <p>
+            This is a recreated product landing page built with HTML/CSS. 
+          </p>
+
+          <p>The page is hosted on GitHub Pages.</p>
+
+          <ul className="project-tech-list">
+            <li>Frontend: HTML/CSS</li>
+          </ul>
+          <div className="project-button-container">
+            <a
+              href="https://smh1988-2.github.io/seans-suits/"
+              className="project-button"
+            >
+              Visit
+            </a>
+            <a
+              href="https://github.com/smh1988-2/seans-suits"
+              className="project-button"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://medium.com/@seanmhurley1988/how-i-learned-to-love-css-480423b3a874"
+              className="project-button"
+            >
+              Medium
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
       <div className="project">
         <h1>Schemeideberg's Pretzels.</h1>
 
